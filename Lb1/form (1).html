@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <title>WEB-Форма</title>
+</head>
+
+<body>
+
+    <h1 align="center">Профіль</h1>
+    <form>
+        <div>
+            <fieldset>
+                <p>
+                    Ваше Ім'я:<span class="impot">*</span><br />
+                    <input required type="text" class="input" minlength="2" />
+                </p>
+
+                <p>
+                    Прізвище:<span class="impot">*</span><br />
+                    <input required type="text" class="input" minlength="2" />
+                </p>
+
+                <p>
+                    Ваш Email:<span class="impot">*</span><br/>
+                    <input required type="email" class="input" />
+                </p>
+
+                <p>
+                    Контактний телефон <br/>В форматі: 380*********:<span class="impot">*</span><br />
+                    <input required type="tel" pattern="380[0-9]{9}" class="input" />
+                </p>
+
+            </fieldset>
+            <br/>
+            <div>
+                <label for="aboutself">Про себе:</label><br/>
+                <textarea id="aboutself" name="user"></textarea>
+            </div>
+        </div>
+
+        <label for="birthday">Дата народження:<span class="impot">*</span></label><br/>
+        <input required type="date" id="birthday" name="Дата народження" value="" min="1901-01-01" max="2022-02-28">
+        <br />
+        <br />
+        <p>Оберіть стать</p>
+        <select id="f/male" name="f/male" required>
+                <option value = 'no'>Не хочу відповідати</option>
+                <option value = 'man'>Чоловіча</option>
+                <option value= "woman">Жіноча</option>
+                <option value = 'other'>Інше</option>               
+            </select>
+        <div id="pastInput" style="display:none">
+            <input type="text" id="newInput" />
+        </div>
+
+
+
+
+        <p>Оберіть вашу соціальну мережу:</p>
+        <div class="pisi">
+            <div class="nadpisi">
+                <p>
+                    <input type="radio" id="contactChoice1" name="contact" value="Telegram">
+                    <label for="contactChoice1">Telegram</label>
+                </p>
+                <p>
+                    <input type="radio" id="contactChoice2" name="contact" value="Viber">
+                    <label for="contactChoice2">Viber</label>
+                </p>
+                <p>
+                    <input type="radio" id="contactChoice3" name="contact" value="Skype">
+                    <label for="contactChoice3">Skype</label>
+                </p>
+                <p>
+
+                    <input type="radio" id="contactChoice4" name="contact" value="Instagram">
+                    <label for="contactChoice4">Instagram</label>
+                </p>
+            </div>
+            <div class="podpisi">
+                <input type="text" class="input" />
+                <input type="text" class="input" />
+                <input type="text" class="input" />
+                <input type="text" class="input" />
+            </div>
+        </div>
+        <fieldset>
+            <legend>Оберіть з якою мовою програмування ви знайомі</legend>
+            <div class="checkboxes">
+                <input type="checkbox"> JavaScript<br/>
+                <input type="checkbox"> Java<br/>
+                <input type="checkbox"> C#<br/>
+                <input type="checkbox"> C++<br/>
+                <input type="checkbox"> Python<br/>
+                <input type="checkbox"> PHP<br/>
+                <input type="checkbox"> Не знайомий
+            </div>
+        </fieldset>
+
+        <div class="knopks">
+            <input type="submit" value="Відправити" class="button green">
+
+            <button class="button clear" type="reset">Очистити форму</button>
+        </div>
+        <p>
+            Всі поля зі знаком <span class="impot">*</span> обов'язкові до заповнення.
+        </p>
+
+
+
+    </form>
+
+
+    <script src=input.js></script>
+</body>
+
+</html>
