@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@300;400;500;600&display=swap');
+
+body,h1,h2,h3,div,p,a{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+font-family: 'Advent pro',sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    img{
+        width: 80px;
+    }
+    nav{
+display: flex;
+gap: 20px;
+
+    }
+}
